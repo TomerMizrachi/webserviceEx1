@@ -1,4 +1,7 @@
-﻿using System;
+///Tomer mizrachi 200542561
+///excercises 2,6,12,16,17
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -56,7 +59,7 @@ namespace OnlineCalculator.Controllers
             return numbers;
 
         }
-
+        //ex2
         // GET api/calculator/SwapTheString
 
         [HttpGet("SwapTheString")]
@@ -80,6 +83,7 @@ namespace OnlineCalculator.Controllers
             }
             return "there is no string value sent from url";
         }
+        //ex6
         // GET api/calculator/Recurings
 
         [HttpGet("Recurings")]
@@ -107,6 +111,7 @@ namespace OnlineCalculator.Controllers
             }
             return 0;
         }
+        //ex12
         // GET api/calculator/Cutcut
 
         [HttpGet("Cutcut")]
@@ -125,7 +130,7 @@ namespace OnlineCalculator.Controllers
             }
             return "there is no string value sent from url";
         }
-
+        //ex16
         // GET api/calculator/MinNum
 
         [HttpGet("MinNum")]
@@ -136,7 +141,7 @@ namespace OnlineCalculator.Controllers
             return min.ToString();  
         }
 
-      
+        //ex17
         // GET api/calculator/AddIntoStr
         [HttpGet("AddIntoStr")]
         public String AddIntoStr(int num, String str)
